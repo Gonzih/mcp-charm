@@ -1,0 +1,46 @@
+{
+  "name": "@gonzih/mcp-charm",
+  "version": "0.1.0",
+  "description": "MCP server for Operation CHARM — free car service manuals from charm.li",
+  "type": "module",
+  "bin": {
+    "mcp-charm": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "mcp",
+    "car",
+    "service",
+    "manuals",
+    "charm",
+    "operation-charm",
+    "automotive"
+  ],
+  "author": "Gonzih",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "1.29.0"
+  },
+  "devDependencies": {
+    "@types/node": "22.15.3",
+    "typescript": "5.8.3"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gonzih/mcp-charm.git"
+  },
+  "homepage": "https://github.com/gonzih/mcp-charm#readme",
+  "bugs": {
+    "url": "https://github.com/gonzih/mcp-charm/issues"
+  }
+}
